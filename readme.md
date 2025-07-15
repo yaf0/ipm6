@@ -1,7 +1,7 @@
 # 使用说明
 - 在运行目录创建admin:password形式的users.conf来自定义密码
 - 在运行目录创建初始iptables命名为iptables.init，如下作为参考
-``` bash
+```bash
 *filter
 :INPUT DROP [0:0]
 :FORWARD ACCEPT [0:0]
@@ -18,6 +18,6 @@ COMMIT
 ```
 
 - 将文件加入crontab -e 以@reboot形式启动
-```
+```bash
 @reboot cd /opt/ips && /usr/bin/python wl.py >> wl.log 2>&1
 ```
