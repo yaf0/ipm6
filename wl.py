@@ -510,7 +510,7 @@ class MyHandler(BaseHTTPRequestHandler):
             u"未授权",
             u"""
             <h1>未授权</h1>
-            <p>您没有权限访问此页面。</p>
+            <p>重要提示：请用浏览器打开，不要用微信。</p>
             """
         ))
         return False
